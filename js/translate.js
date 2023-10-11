@@ -20,6 +20,8 @@ let langs = document.querySelector(".langs"),
      sonstigeMontagenTitel = document.querySelector(".sonstigeMontagenTitel");
      sonstigeMontagen1 = document.querySelector(".sonstigeMontagen1");
      sonstigeMontagen2 = document.querySelector(".sonstigeMontagen2");
+     botendienst = document.querySelector(".botendienst");
+     botendienstTitel = document.querySelector(".botendienstTitel");
 
 link.forEach(el=>{
      el.addEventListener("click", ()=>{
@@ -46,6 +48,8 @@ link.forEach(el=>{
           sonstigeMontagenTitel.textContent = data[attr].sonstigeMontagenTitel
           sonstigeMontagen1.textContent = data[attr].sonstigeMontagen1
           sonstigeMontagen2.textContent = data[attr].sonstigeMontagen2
+          botendienstTitel.textContent = data[attr].botendienstTitel
+          botendienst.textContent = data[attr].botendienst
      })
 })
 
@@ -73,7 +77,10 @@ let data = {
 
         sonstigeMontagenTitel: "Shuttleservice",
         sonstigeMontagen1: "Wir bieten zuverlässige Fahrten in der Umgebung von x an und sind rund um die Uhr für Sie da.",
-        sonstigeMontagen2: "Unser Privattransport-Service ist darauf ausgerichtet, Ihre Mobilität in der Umgebung von x so bequem wie möglich zu gestalten. Egal, ob Sie zu einem wichtigen Geschäftstermin müssen oder einfach einen sicheren Weg von A nach B suchen - wir stehen Ihnen zur Verfügung. Kontaktieren Sie uns noch heute, um Ihre nächste Fahrt zu planen."
+        sonstigeMontagen2: "Unser Privattransport-Service ist darauf ausgerichtet, Ihre Mobilität in der Umgebung von x so bequem wie möglich zu gestalten. Egal, ob Sie zu einem wichtigen Geschäftstermin müssen oder einfach einen sicheren Weg von A nach B suchen - wir stehen Ihnen zur Verfügung. Kontaktieren Sie uns noch heute, um Ihre nächste Fahrt zu planen.",
+        
+        botendienstTitel: "Botendienst",
+        botendienst: "Sie haben Pakete oder Dokumente die Sie von A nach B transportieren müssen? Wir bieten die perfekte Lösung mit unserem professionellem Botendienst.",
     },
     englisch: {
         services: "Services",
@@ -98,6 +105,9 @@ let data = {
 
         sonstigeMontagenTitel: "Shuttleservice",
         sonstigeMontagen1: "We offer reliable rides in the area of x and are here for you around the clock.",
-        sonstigeMontagen2: "Our private transportation service is designed to make your mobility around x as convenient as possible. Whether you need to get to an important business meeting or are simply looking for a safe way to get from A to B, we're here to help. Contact us today to schedule your next ride."
+        sonstigeMontagen2: "Our private transportation service is designed to make your mobility around x as convenient as possible. Whether you need to get to an important business meeting or are simply looking for a safe way to get from A to B, we're here to help. Contact us today to schedule your next ride.",
+        
+        botendienstTitel: "Courier Service",
+        botendienst: "You have packages or documents that you need to transport from A to B? We offer the perfect solution with our professional courier service.",
     }
 }
