@@ -1,6 +1,6 @@
 let langs = document.querySelector(".langs"),
      link = document.querySelectorAll("a"),
-     services = document.querySelector(".services"),
+     servicesMenuText = document.querySelector(".servicesMenuText"),
      portfolio = document.querySelector(".portfolio"),
      kontakt = document.querySelector(".kontakt"),
      impressum = document.querySelector(".impressum"),
@@ -10,18 +10,20 @@ let langs = document.querySelector(".langs"),
      telefonnummer = document.querySelector(".telefonnummer");
      mehrErfahren = document.querySelector(".mehrErfahren");
      services2 = document.querySelector(".services2");
-     services2Text = document.querySelector(".services2Text");
-     kuechenMontage = document.querySelector(".kuechenMontage");
-     kuechenMontageTitel = document.querySelector(".kuechenMontageTitel");
-     kuechenMontage20Jahre = document.querySelector(".kuechenMontage20Jahre");
-     anschluesseTitel = document.querySelector(".anschluesseTitel");
-     anschluesse1 = document.querySelector(".anschluesse1");
-     anschluesse2 = document.querySelector(".anschluesse2");
-     sonstigeMontagenTitel = document.querySelector(".sonstigeMontagenTitel");
-     sonstigeMontagen1 = document.querySelector(".sonstigeMontagen1");
-     sonstigeMontagen2 = document.querySelector(".sonstigeMontagen2");
+     servicesDescriptionText1 = document.querySelector(".servicesDescriptionText1");
+     servicesDescriptionText2 = document.querySelector(".servicesDescriptionText2");
+     einzelfahrtenTitel = document.querySelector(".einzelfahrtenTitel");
+     einzelfahrtenDescription1 = document.querySelector(".einzelfahrtenDescription1");
+     einzelfahrtenDescription2 = document.querySelector(".einzelfahrtenDescription2");
+     flughafentransferTitel = document.querySelector(".flughafentransferTitel");
+     flughafentransferDescription1 = document.querySelector(".flughafentransferDescription1");
+     flughafentransferDescription2 = document.querySelector(".flughafentransferDescription2");
+     shuttleserviceTitel = document.querySelector(".shuttleserviceTitel");
+     shuttleserviceDescription1 = document.querySelector(".shuttleserviceDescription1");
+     shuttleserviceDescription2 = document.querySelector(".shuttleserviceDescription2");
      botendienst = document.querySelector(".botendienst");
      botendienstTitel = document.querySelector(".botendienstTitel");
+     kontaktFormularTitel = document.querySelector(".kontaktFormularTitel");
 
 link.forEach(el=>{
      el.addEventListener("click", ()=>{
@@ -30,7 +32,7 @@ link.forEach(el=>{
 
           let attr = el.getAttribute("language")
 
-          services.textContent = data[attr].services
+          servicesMenuText.textContent = data[attr].servicesMenuText
           kontakt.textContent = data[attr].kontakt
           impressum.textContent = data[attr].impressum
           willkommen.textContent = data[attr].willkommen
@@ -38,24 +40,26 @@ link.forEach(el=>{
           willkommensText2.textContent = data[attr].willkommensText2
           telefonnummer.textContent = data[attr].telefonnummer
           services2.textContent = data[attr].services2
-          services2Text.textContent = data[attr].services2Text
-          kuechenMontage.textContent = data[attr].kuechenMontage
-          kuechenMontageTitel.textContent = data[attr].kuechenMontageTitel
-          kuechenMontage20Jahre.textContent = data[attr].kuechenMontage20Jahre
-          anschluesseTitel.textContent = data[attr].anschluesseTitel
-          anschluesse1.textContent = data[attr].anschluesse1
-          anschluesse2.textContent = data[attr].anschluesse2
-          sonstigeMontagenTitel.textContent = data[attr].sonstigeMontagenTitel
-          sonstigeMontagen1.textContent = data[attr].sonstigeMontagen1
-          sonstigeMontagen2.textContent = data[attr].sonstigeMontagen2
+          servicesDescriptionText1.textContent = data[attr].servicesDescriptionText1
+          servicesDescriptionText2.textContent = data[attr].servicesDescriptionText2
+          einzelfahrtenDescription1.textContent = data[attr].einzelfahrtenDescription1
+          einzelfahrtenTitel.textContent = data[attr].einzelfahrtenTitel
+          einzelfahrtenDescription2.textContent = data[attr].einzelfahrtenDescription2
+          flughafentransferTitel.textContent = data[attr].flughafentransferTitel
+          flughafentransferDescription1.textContent = data[attr].flughafentransferDescription1
+          flughafentransferDescription2.textContent = data[attr].flughafentransferDescription2
+          shuttleserviceTitel.textContent = data[attr].shuttleserviceTitel
+          shuttleserviceDescription1.textContent = data[attr].shuttleserviceDescription1
+          shuttleserviceDescription2.textContent = data[attr].shuttleserviceDescription2
           botendienstTitel.textContent = data[attr].botendienstTitel
           botendienst.textContent = data[attr].botendienst
+          kontaktFormularTitel.textContent = data[attr].kontaktFormularTitel
      })
 })
 
 let data = {
     deutsch: {
-        services: "Services",
+        servicesMenuText: "Dienstleistungen",
         portfolio: "Portfolio",
         kontakt: "Kontakt",
         impressum: "Impressum",
@@ -64,26 +68,29 @@ let data = {
         willkommensText2: "Wir kennen den Weg!",
         telefonnummer: "0664 7991229",
         mehrErfahren: "Mehr erfahren",
-        services2: "Services",
-        services2Text: "Unsere Dienstleistungen im Überblick",
+        services2: "Dienstleistungen",
+        servicesDescriptionText1: "Wir wissen, dass Transportbedürfnisse keine Uhrzeiten kennen.",
+        servicesDescriptionText2: "Verlassen Sie sich daher 24/7 auf LD Taxi für Ihre Fahrten.",
 
-        kuechenMontageTitel: "Einzelfahrten",
-        kuechenMontage: "Wir bieten zuverlässige Fahrten in der Umgebung von x an und sind rund um die Uhr für Sie da.",
-        kuechenMontage20Jahre: "Unser Privattransport-Service ist darauf ausgerichtet, Ihre Mobilität in der Umgebung von x so bequem wie möglich zu gestalten. Egal, ob Sie zu einem wichtigen Geschäftstermin müssen oder einfach einen sicheren Weg von A nach B suchen - wir stehen Ihnen zur Verfügung. Kontaktieren Sie uns noch heute, um Ihre nächste Fahrt zu planen.",
+        einzelfahrtenTitel: "Einzelfahrten",
+        einzelfahrtenDescription1: "",
+        einzelfahrtenDescription2: "Unser Privattransport-Service ist darauf ausgerichtet, Ihre Mobilität so bequem wie möglich zu gestalten. Egal, ob Sie zu einem wichtigen Geschäftstermin müssen oder einfach einen sicheren Weg von A nach B suchen - wir stehen Ihnen zur Verfügung. Kontaktieren Sie uns noch heute, um Ihre nächste Fahrt zu planen.",
 
-        anschluesseTitel: "Flughafentransfer",
-        anschluesse1: "Wir bieten zuverlässige Fahrten in der Umgebung von x an und sind rund um die Uhr für Sie da.",
-        anschluesse2: "Unser Privattransport-Service ist darauf ausgerichtet, Ihre Mobilität in der Umgebung von x so bequem wie möglich zu gestalten. Egal, ob Sie zu einem wichtigen Geschäftstermin müssen oder einfach einen sicheren Weg von A nach B suchen - wir stehen Ihnen zur Verfügung. Kontaktieren Sie uns noch heute, um Ihre nächste Fahrt zu planen.",
+        flughafentransferTitel: "Flughafentransfer",
+        flughafentransferDescription1: "Von Wien bis Salzburg, LD Taxi bietet Ihnen problemlose Flughafentransfers zu den wichtigsten Flughäfen in Österreich. Beginnen oder beenden Sie Ihre Reise in Österreich stressfrei mit unseren komfortablen und bequemen Flughafentransfers.",
+        flughafentransferDescription2: "",
 
-        sonstigeMontagenTitel: "Shuttleservice",
-        sonstigeMontagen1: "Wir bieten zuverlässige Fahrten in der Umgebung von x an und sind rund um die Uhr für Sie da.",
-        sonstigeMontagen2: "Unser Privattransport-Service ist darauf ausgerichtet, Ihre Mobilität in der Umgebung von x so bequem wie möglich zu gestalten. Egal, ob Sie zu einem wichtigen Geschäftstermin müssen oder einfach einen sicheren Weg von A nach B suchen - wir stehen Ihnen zur Verfügung. Kontaktieren Sie uns noch heute, um Ihre nächste Fahrt zu planen.",
+        shuttleserviceTitel: "Shuttleservice",
+        shuttleserviceDescription1: "Wenn Sie an einer Veranstaltung teilnehmen oder eine organisieren, können Sie sich auf LD Taxi verlassen. Unser Shuttle-Service steht Ihnen zur Verfügung, um Sie und Ihre Gäste zu befördern.",
+        shuttleserviceDescription2: "",
         
         botendienstTitel: "Botendienst",
         botendienst: "Sie haben Pakete oder Dokumente die Sie von A nach B transportieren müssen? Wir bieten die perfekte Lösung mit unserem professionellem Botendienst.",
+
+        kontaktFormularTitel: "Kontaktieren Sie Uns",
     },
     englisch: {
-        services: "Services",
+        servicesMenuText: "Services",
         portfolio: "Portfolio",
         kontakt: "Contact",
         impressum: "Impressum",
@@ -93,21 +100,24 @@ let data = {
         telefonnummer: "0664 7991229",
         mehrErfahren: "Tell me more",
         services2: "Services",
-        services2Text: "Overview of our Services",
+        servicesDescriptionText1: "We understand that transportation needs have no time constraints.",
+        servicesDescriptionText2: "Therefore, rely on LD Taxi 24/7 for your rides.",
 
-        kuechenMontageTitel: "Single Trips",
-        kuechenMontage: "We offer reliable rides in the area of x and are here for you around the clock.",
-        kuechenMontage20Jahre: "Our private transportation service is designed to make your mobility around x as convenient as possible. Whether you need to get to an important business meeting or are simply looking for a safe way to get from A to B, we're here to help. Contact us today to schedule your next ride.",
+        einzelfahrtenTitel: "Single Trips",
+        einzelfahrtenDescription1: "",
+        einzelfahrtenDescription2: "Our private transportation service is designed to make your mobility as convenient as possible. Whether you need to get to an important business meeting or are simply looking for a safe way to get from A to B, we're here to help. Contact us today to schedule your next ride.",
 
-        anschluesseTitel: "Airporttransfers",
-        anschluesse1: "We offer reliable rides in the area of x and are here for you around the clock.",
-        anschluesse2: "OOur private transportation service is designed to make your mobility around x as convenient as possible. Whether you need to get to an important business meeting or are simply looking for a safe way to get from A to B, we're here to help. Contact us today to schedule your next ride.",
+        flughafentransferTitel: "Airporttransfers",
+        flughafentransferDescription1: "From Vienna to Salzburg, LD Taxi offers you hassle-free airport transfers to the main airports in Austria. Start or end your trip in Austria stress-free with our comfortable and convenient airport transfers.",
+        flughafentransferDescription2: "",
 
-        sonstigeMontagenTitel: "Shuttleservice",
-        sonstigeMontagen1: "We offer reliable rides in the area of x and are here for you around the clock.",
-        sonstigeMontagen2: "Our private transportation service is designed to make your mobility around x as convenient as possible. Whether you need to get to an important business meeting or are simply looking for a safe way to get from A to B, we're here to help. Contact us today to schedule your next ride.",
+        shuttleserviceTitel: "Shuttleservice",
+        shuttleserviceDescription1: "If you are attending or organizing an event, you can rely on LD Taxi. Our shuttle service is at your disposal to transport you and your guests.",
+        shuttleserviceDescription2: "",
         
         botendienstTitel: "Courier Service",
         botendienst: "You have packages or documents that you need to transport from A to B? We offer the perfect solution with our professional courier service.",
+
+        kontaktFormularTitel: "Contact Us",
     }
 }
