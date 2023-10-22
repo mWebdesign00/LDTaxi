@@ -11484,6 +11484,7 @@ p {
   }
 }
 header.masthead {
+  position: relative;
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
@@ -11496,6 +11497,18 @@ header.masthead {
   background-position: center center;
   background-size: cover;
 }
+
+header.masthead::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /*background-color: rgba(0, 0, 0, 0.5); /* Adjust the last value (0.5) to control darkness */
+}
+
+
 
 header.masthead-2 {
   padding-top: 10.5rem;
