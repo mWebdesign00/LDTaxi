@@ -20,6 +20,8 @@
     <!--Fürs Bilder sliden-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+
 <style>
     
     form {
@@ -34,16 +36,20 @@
     input,
     textarea {
         width: 100%;
-        background: transparent;
+        background: white;
         padding: 8px;
         outline: none;
-        color: white;
+        color: black;
     }
 
     input:focus,
     textarea:focus {
         outline: none;
         border-color: black;
+    }
+
+    input[name="text"] {
+    height: 100px;
     }
 
     button {
@@ -448,8 +454,10 @@
 
             <body>
                 <form action="https://formsubmit.co/burgerfan65@gmail.com" method="POST">
-                    <input type="text" name="name" placeholder="Namen eingeben" required>
-                    <input type="email" name="email" placeholder="Email eingeben" required>
+                    <input type="name" name="name" placeholder="&#xf2bd; Namen eingeben" style="font-family:Arial, FontAwesome" required>
+                    <input type="phone" name="Telefonnummer" placeholder="&#xf098; Telefonnummer eingeben" style="font-family:Arial, FontAwesome" required>
+                    <input type="email" name="email" placeholder="&#xf0e0; Email eingeben" style="font-family:Arial, FontAwesome" required>
+                    <textarea type="text" name="text" rows="8" cols="10" wrap="soft" maxlength="300" style="overflow:hidden" placeholder="Schreiben Sie uns hier Ihre Anfrage"></textarea>
                     <button type="submit">Senden</button>
                 </form>
              </body>
