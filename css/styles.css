@@ -11521,7 +11521,7 @@ header.masthead {
   user-select: text; /* Allow text selection */
   font-size: 1.5rem;
   margin-top: 1rem;
-  margin-bottom: 0rem;
+  margin-bottom: 1rem;
   color: black;
 }
 
