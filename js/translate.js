@@ -23,6 +23,8 @@ let langs = document.querySelector(".langs"),
      shuttleserviceDescription2 = document.querySelector(".shuttleserviceDescription2");
      botendienst = document.querySelector(".botendienst");
      botendienstTitel = document.querySelector(".botendienstTitel");
+     rechnungsfahrtenTitel = document.querySelector(".rechnungsfahrtenTitel");
+     rechnungsfahrtenDescription = document.querySelector(".rechnungsfahrtenDescription");
      kontaktFormularTitel = document.querySelector(".kontaktFormularTitel");
 
 link.forEach(el=>{
@@ -53,6 +55,8 @@ link.forEach(el=>{
           shuttleserviceDescription2.textContent = data[attr].shuttleserviceDescription2
           botendienstTitel.textContent = data[attr].botendienstTitel
           botendienst.textContent = data[attr].botendienst
+          rechnungsfahrtenTitel.textContent = data[attr].rechnungsfahrtenTitel
+          rechnungsfahrtenDescription.textContent = data[attr].rechnungsfahrtenDescription
           kontaktFormularTitel.textContent = data[attr].kontaktFormularTitel
      })
 })
@@ -87,6 +91,9 @@ let data = {
         botendienstTitel: "Botendienst",
         botendienst: "Sie haben Pakete oder Dokumente die Sie von A nach B transportieren müssen? Wir bieten die perfekte Lösung mit unserem professionellem Botendienst.",
 
+        rechnungsfahrtenTitel: "Rechnungsfahrten",
+        rechnungsfahrtenDescription: "Firmen können Rechnungsfahrten bei LD Taxi buchen, um pünktlich an ihr Ziel zu gelangen. Die Kosten werden später Ihrer Firma in Rechnung gestellt. Buchen Sie rechtzeitig für eine stressfreie Fahrt.",
+
         kontaktFormularTitel: "Kontaktieren Sie Uns",
     },
     englisch: {
@@ -117,6 +124,9 @@ let data = {
         
         botendienstTitel: "Courier Service",
         botendienst: "You have packages or documents that you need to transport from A to B? We offer the perfect solution with our professional courier service.",
+
+        rechnungsfahrtenTitel: "For Companies",
+        rechnungsfahrtenDescription: "Companies can book rides with LD Taxi to get to their destination on time. The costs will be invoiced to your company later. Book upfront for a stress-free journey",
 
         kontaktFormularTitel: "Contact Us",
     }
