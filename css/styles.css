@@ -11508,7 +11508,9 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: var(--bs-yellow);
-  background-image: url("../assets/img/PassatTitelImage.png");
+  background-color: #475569;
+  background-image: url("../assets/img/streest_at_night.jpg");
+  background-blend-mode: multiply;
   width: 100%;
   height: 100%;
   background-repeat: no-repeat;
